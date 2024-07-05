@@ -14,6 +14,7 @@ import BlogCreation from "./pages/BlogCreation.jsx";
 import SpecificBlog from "./pages/SpecificBlog.jsx";
 import ManageTrainerProfile from "./pages/ManageTrainerProfile.jsx";
 import SpecificTrainer from "./pages/SpecificTrainer.jsx";
+
 import Metrics from "./pages/Metrics.jsx";
 import ChangeMetrics from "./pages/ChangeMetrics.jsx";
 import Settings from "./pages/Settings.jsx";

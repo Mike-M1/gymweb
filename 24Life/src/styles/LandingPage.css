@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#main{
+  display: flex;
+  flex-direction: column;
+
+    /* height: 100vh; */
+    width: 100vw;
+    background-image: url("../assets/skyline.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#Hero{
+    border: black 2;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-areas: 
+    "text image image"
+    "text image image"
+    ; */
+    
+}
+
+#navbar{
+    background-color: white;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
+#navbar > *{
+    height: fit-content;
+    align-items: center;
+}
+
+#herocontent{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+#actcontent{
+    border: black 2px solid;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left:150px;
+    width: fit-content;
+   
+    background-color: white;
+    color: black;
+    gap: 20px;
+}
+
+
+#text{
+    height: fit-content;
+    width: 100%;
+} 
+
+
+#SocialProof{
+    height: fit-content;
+    background-color: white;
+}
+
+#ExtraSocialProof{
+
+    background-color: white;
+}
+
+
+#Plans{
+    height: fit-content;
+    padding-bottom: 20px;
+    
+}
+
+#PlanCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#CTA{
+    height: 50vh;
+    background-color: none;
+}
+
+#hr{
+    color:black;
+    background-color: black;
+    height: 2px;;
+}
+
+#Footer{
+    height: fit-content;
+    background-color: none;
+}
+
+.navbtn{
+    border: solid black 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    padding: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+/* #btn1{
+
+} */
