@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#testi{
+    border: black solid 2px;
+    width: 60vw;
+
+    max-width: 600px;
+    height: 50vw;
+    max-height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    font-size: clamp(10px, 5vw, 40px);
+}
+
+#pic{
+    height:40vw;
+    background-color:;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+}
+
+#heading{
+    font-size: clamp(10px,4vw, 30px);
+}
+
+#body{
+    font-size: clamp(10px, 2vw, 20px)
+}

@@ -11,11 +11,18 @@
     flex-direction: column;
 }
 
+#username{
+    font-size: clamp(10px, 7vw, 30px);
+}
 
 
 #child1{
     background-color: transparent;
     flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
 }
 
 #contentgrid{
@@ -33,5 +40,12 @@
     border-radius: 10px;
 
 }
+#content{
+    
+}
 
+#chart{
+    width: 70vw;
+    min-height: 70vw;
+}
 

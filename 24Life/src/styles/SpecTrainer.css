@@ -2,17 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-#chartsection{
-    background-color: aqua;
-}
-
-#chart1{
-    height: 90px !important;
-    
-}
-
-#content{
-    flex: 1;
-}

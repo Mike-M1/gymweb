@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -14,14 +14,20 @@ import BlogCreation from "./pages/BlogCreation.jsx";
 import SpecificBlog from "./pages/SpecificBlog.jsx";
 import ManageTrainerProfile from "./pages/ManageTrainerProfile.jsx";
 import SpecificTrainer from "./pages/SpecificTrainer.jsx";
-
+import DrawingBoard from "./pages/Drawingboard.jsx"
 import Metrics from "./pages/Metrics.jsx";
 import ChangeMetrics from "./pages/ChangeMetrics.jsx";
 import Settings from "./pages/Settings.jsx";
 import SpecificTestimonial from "./pages/SpecificTestimonial.jsx";
 import TestimonialManagement from "./pages/TestimonialManagement.jsx";
 
+
+
 const router = createBrowserRouter([
+  {
+    path: "/Drawingboard",
+    element: <DrawingBoard/>
+  },
   //Page 1: Home Page
   {
     path: "/",

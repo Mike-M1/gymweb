@@ -1,41 +1,33 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import "../styles/SpecTest.css";
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import Navbar from "../components/Navbar";
+import "../styles/SpecBlog.css";
+import { useNavigate } from "react-router-dom";
 
 export default function SpecificTestimonial() {
-
-const navigate = useNavigate();
-const goToAccount = () => {
-  navigate("/User=:name")
-}
+  const navigate = useNavigate();
 
   return (
     <div id="outer">
       <Navbar />
+      <h1 className="font-heading" id="blogtitle">
+       Jim's Testimony
+      </h1>
       <div>
-        <div id="testvis">
+        <div id="blogvis" className="border-2 border-black ">
           <img src="" alt="" />
           <video src=""></video>
+          <p>Video or Image</p>
         </div>
 
         <div className="flex flex-col gap-[20px] font-body">
-          <div className="flex flex-col items-center gap-[10px]">
-            <label htmlFor="">Name</label>
-            <input type="text" className="border-black border-2  w-[200px]" />
-          </div>
 
           <div className="flex flex-col items-center gap-[10px]">
-            <label htmlFor="" >Goals in Training</label>
-            <input type="text" className="border-black border-2  w-[200px]" />
+            <h1 htmlFor="" className="font-body" id="content">
+              Blog Content
+            </h1>
+            <p type="text" className="border-black border-2  w-[200px]" />
           </div>
-
-          <div className="flex flex-col items-center gap-[10px]">
-            <label htmlFor="">Testimonial Content</label>
-            <input type="text" className="border-black border-2  w-[200px]" />
-          </div>
-
-          <button type="button" onClick={goToAccount}>Done?</button>
+          
         </div>
       </div>
     </div>

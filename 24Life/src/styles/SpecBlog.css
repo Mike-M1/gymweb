@@ -4,15 +4,20 @@
 @tailwind utilities;
 
 
-#chartsection{
-    background-color: aqua;
+#blogtitle{
+    font-size: clamp(10px, 6vw, 30px);
+    margin-top: 10px;
 }
 
-#chart1{
-    height: 90px !important;
-    
+#blogvis{
+
+    width: 80vw;
+    max-width: 800px;
+    margin: 20px auto;
+    height: 50vw;
+    max-height: 500px;
 }
 
 #content{
-    flex: 1;
+    font-size: clamp(10px, 4vw, 15px);
 }
