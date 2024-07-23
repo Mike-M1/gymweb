@@ -15,7 +15,7 @@ export default function Desktop_user_menu() {
       };
 
       const goToCreateBlog = () => {
-        navigate("/User=:name/BlogCreation");
+        navigate("/User/:name/BlogCreation");
       };
 
       const goToTestimonialManage = () => {
