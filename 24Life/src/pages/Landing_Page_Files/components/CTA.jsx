@@ -1,6 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios'
 
 export default function CTA(props) {
+
+  let [name, setName] = useState(null)
+  let [email, setEmail] = useState(null)
+
+  const goToCredentials = async() => {
+    let user = {
+      name,
+      email
+    }
+    let data = await axios.post("https://gymweb-backend.onrender.com/CTA_Users", user);
+  }
+
   return (
     <div id="CTA" className="flex flex-col justify-center items-center">
       <div
@@ -38,9 +51,7 @@ export default function CTA(props) {
           <button
             className="text-white bg-black my-[10px] py-[5px]"
             id="btn"
-            onClick={() =>
-              console.log(`Name is ${name1} and email is ${email}`)
-            }
+            onClick={() =>{goToCredentials}}
           >
             {"Let's Do This"}
           </button>

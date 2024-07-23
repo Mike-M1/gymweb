@@ -8,7 +8,6 @@ const CTAContactSchema = new mongoose.Schema(
   {
     Name: String,
     Email: String,
-    Phone: String,
   },
   { collection: "CTAContacts" }
 );
