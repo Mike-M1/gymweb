@@ -14,11 +14,18 @@ export default function Credentials() {
 
 
   function addUser(){
-    axios.post("http://localhost:3001/createuser", {name, email, password} ).then((response)=> {
-      console.log("Response from server:", response.data);
-    }).catch((error) => {
-      console.log(error)
-    })
+    axios
+      .post("https://gymweb-backend.onrender.com/createuser", {
+        name,
+        email,
+        password,
+      })
+      .then((response) => {
+        console.log("Response from server:", response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
 

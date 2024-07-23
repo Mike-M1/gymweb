@@ -10,7 +10,11 @@ export default function Testimonials() {
 
   let [data1, setData] = useState(null)
   useEffect(() =>{
-    axios.get("http://localhost:3001/Testimonials").then((data)=>{setData(data.data)})
+    axios
+      .get("https://gymweb-backend.onrender.com/Testimonials")
+      .then((data) => {
+        setData(data.data);
+      });
   }, [])
 
   const navigate = useNavigate();

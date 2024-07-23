@@ -12,7 +12,10 @@ export default function CredentialForm() {
   const navigate = useNavigate();
 
   const  goToAccount = async () => {
-    let response =await axios.post("http://localhost:3001/Users/FindUser", {password, email})
+    let response = await axios.post(
+      "https://gymweb-backend.onrender.com/Users/FindUser",
+      { password, email }
+    );
 
     console.log(response)
 
@@ -27,11 +30,11 @@ export default function CredentialForm() {
   return (
     <div className='h-screen bg-slat'>
       <div className="flex flex-col w-screen  h-screen bg-transparent justify-center items-center">
+
         <div className="flex flex-col gap-[20px] justify-center items-center bg-white p-[20px] py-[50px] px-[30px]" id="form">
 
-          <div className='flex flex-row font-heading gap-[20px] mb-[30px]  text-[40px]'>
+          <div className='flex flex-row font-heading gap-[20px] mb-[30px]  text-[40px] justify-center items-center'>
             <div>Log In</div>
-            <div>Sign Up</div>
           </div>
 
           <div className=" flex flex-col w-full items-center gap-[10px]">
