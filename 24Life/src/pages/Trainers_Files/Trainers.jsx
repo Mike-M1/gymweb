@@ -10,7 +10,7 @@ export default function Testimonials() {
 
   useEffect(()=>{
     const data = async()=> {
-      let d1 = await axios.get("http://localhost:3001/Trainers")
+      let d1 = await axios.get("https://gymweb-backend.onrender.com/Trainers");
       setData1(d1.data)
       console.log(d1.data)
     }
