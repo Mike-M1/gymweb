@@ -13,7 +13,7 @@ export default function Desktop_user_menu() {
       const goToSettings = () => {
         navigate("/User/:name/settings");
       };
-
+//
       const goToCreateBlog = () => {
         navigate("/User/:name/BlogCreation");
       };
